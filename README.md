@@ -17,7 +17,8 @@ $$
     \end{array}
 $$
 
-where the coefficient of virality $\large k\in\lbrace 0, \frac{1}{\vartheta} \rbrace$
+where the coefficient of virality
+$\large k\in\lbrace 0, \frac{1}{\vartheta} \rbrace$
 
 $$
     \large
@@ -29,9 +30,9 @@ $$
     \end{array}
 $$
 
-and the number of blocks elapsed since publishing the squeak $\large x$, we have the
-full virality formula $V$ which only applies to squeaks with at least one like
-$\large L$ and and one resqueak $\large R$:
+and the number of blocks elapsed since publishing the squeak $\large x$, gives
+us the full virality formula $V$ which only applies to squeaks with at least one
+like $\large L$ and and one resqueak $\large R$:
 
 $$
     \large
