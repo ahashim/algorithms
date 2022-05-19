@@ -26,7 +26,7 @@ $$
 \end{array}
 $$
 
-where the coefficient of virality $k\isin\lbrace 0, \frac{1}{\vartheta} \rbrace$
+where the coefficient of virality $k\in\lbrace 0, \frac{1}{\vartheta} \rbrace$
 
 $$
 \begin{array}{c}
@@ -44,7 +44,7 @@ $L$ and and one resqueak $R$:
 $$
 \begin{array}{c}
     V = \begin{cases}
-      \frac{1}{x + c} &\text{if } L > 0 \ \And R > 0 \\
+      \frac{1}{x + k} &\text{if } L > 0 \ \And R > 0 \\
       \frac{0}{x} &\text{otherwise}
     \end{cases}
 \end{array}
