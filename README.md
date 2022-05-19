@@ -4,9 +4,15 @@
 
 Given the following properties of a squeak:
 
-- number of likes $L$
-- number of dislikes $D$
-- number of resqueaks $R$
+- number of likes
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit\color{white} L}#gh-dark-mode-only">
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit L}##gh-light-mode-only">
+- number of dislikes
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit\color{white} D}#gh-dark-mode-only">
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit D}##gh-light-mode-only">
+- number of resqueaks
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit\color{white} R}#gh-dark-mode-only">
+  <img src="https://render.githubusercontent.com/render/math?math={\Large\textit R}##gh-light-mode-only">
 
 we can calculate the order of virality $\vartheta$ with the formula
 
