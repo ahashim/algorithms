@@ -43,3 +43,17 @@ $$
       \end{cases}
     \end{array}
 $$
+
+Plotting the formula with some sample data as input yields the following curve
+
+![baseline virality of sample squeaks](./virality/figures/sample_data.png "Virality from sample squeaks")
+
+Using a Pareto distribution of weighted random values for 10000 squeaks, we can
+use the formula to verify that all squeaks fall within an acceptable range of
+virality as blocks elapse.
+
+If we assume a virality coefficient of `0.85` for a
+squeak to be considered "viral", this chart visually confirms that roughly 15%
+of squeaks that were generated achieved that coefficient in the distribution.
+
+![baseline virality of sample squeaks](./virality/figures/generated_data.png "Virality from generated squeaks")
