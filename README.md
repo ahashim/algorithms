@@ -4,9 +4,18 @@
 
 Given the following properties of a squeak:
 
-- number of likes $\Large L$
-- number of dislikes $\Large D$
-- number of resqueaks $\Large R$
+- number of likes
+  $$
+      \Large L
+  $$
+- number of dislikes
+  $$
+      \Large D
+  $$
+- number of resqueaks
+  $$
+      \Large R
+  $$
 
 we can calculate the order of virality $\vartheta$ with the formula
 
