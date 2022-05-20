@@ -1,4 +1,6 @@
-# 🧮 Critter Algorithms
+# 🧮 Algorithms
+
+Implementation details of the algorithms used in [Critter](https://github.com/ahashim/critter).
 
 ### Virality
 
