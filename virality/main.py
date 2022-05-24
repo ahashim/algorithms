@@ -5,8 +5,8 @@ from sample_data import squeaks
 
 
 def limit(x, squeak):
-    if squeak["likes"] > 0 and squeak["resqueaks"] > 0:
-        return 1 / ((x) + virality(squeak))
+    if squeak["likes"] > 2 and squeak["resqueaks"] > 2:
+        return 1 / (x + virality(squeak))
     return 0 / x
 
 

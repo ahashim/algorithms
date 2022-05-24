@@ -8,9 +8,9 @@ squeaks = [
     },
     {
         "label": "minimum virality requirement",
-        "likes": 1,
+        "likes": 3,
         "dislikes": 0,
-        "resqueaks": 1,
+        "resqueaks": 3,
     },
     {
         "label": "liked",
@@ -20,7 +20,7 @@ squeaks = [
     },
     {
         "label": "disliked",
-        "likes": 2,
+        "likes": 3,
         "dislikes": 188,
         "resqueaks": 34,
     },
