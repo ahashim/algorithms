@@ -33,14 +33,14 @@ $$
 $$
 
 and the number of blocks elapsed since publishing the squeak $\large x$, gives
-us the full virality formula $V$ which only applies to squeaks with at least one
-like $\large L$ and and one resqueak $\large R$:
+us the full virality formula $V$ which only applies to squeaks with at least two
+likes $\large L$ and and two resqueaks $\large R$:
 
 $$
     \large
     \begin{array}{c}
       V \ = \ \begin{cases}
-        \frac{1}{x \ + \ k} &\text{if } L \ > \ 0 \ \And R \ > \ 0 \\
+        \frac{1}{x \ + \ k} &\text{if } L \ > \ 2 \ \And R \ > \ 2 \\
         \frac{0}{x} &\text{otherwise}
       \end{cases}
     \end{array}
