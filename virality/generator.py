@@ -1,12 +1,12 @@
+from main import score
 import matplotlib.pyplot as plt
 import numpy as np
 from random import randint, choice
-from main import limit
 
 
-def add_limit(squeaks):
+def add_score(squeaks):
     for squeak in squeaks:
-        squeak["limit"] = limit(squeak["blocks_elapsed"], squeak)
+        squeak["score"] = score(squeak["blocks_elapsed"], squeak)
     return squeaks
 
 
@@ -24,21 +24,21 @@ def random_squeaks(count):
 
 
 def weighted_random():
-    return round(choice(list(np.random.pareto(0.1, 5)) + [0]))
+    return round(choice(list(np.random.pareto(0.1, 1)) + [0]))
 
 
 def main():
     # title & labels
     plt.title("Virality")
-    plt.xlabel("blocks elapsed since authored")
-    plt.ylabel("coefficient")
+    plt.xlabel("blocks elapsed since published")
+    plt.ylabel("score")
 
     # blocks elapsed
-    x = np.arange(1, 50)
+    x = np.arange(1, 1000)
 
     # plot
-    for squeak in add_limit(random_squeaks(10000)):
-        plt.plot(x, squeak["limit"] / x)
+    for squeak in add_score(random_squeaks(10000)):
+        plt.plot(x, squeak["score"] / x)
 
     # render
     plt.show()
