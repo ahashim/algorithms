@@ -6,7 +6,7 @@ from random import randint, choice
 
 def add_score(squeaks):
     for squeak in squeaks:
-        squeak["score"] = score(squeak["blocks_elapsed"], squeak)
+        squeak["score"] = score(squeak, squeak["blocks_elapsed"])
     return squeaks
 
 

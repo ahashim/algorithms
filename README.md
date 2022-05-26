@@ -48,7 +48,7 @@ $$
 
 Plotting the formula with some mock data as input yields the following curve
 
-![baseline virality of sample squeaks](./virality/figures/sample_data.png "Virality from sample squeaks")
+![virality of mock squeaks](./virality/figures/mock_data.png "Virality of mock squeaks")
 
 Using a Pareto distribution of weighted random values for 10000 squeaks, we can
 use the formula to verify that all squeaks fall within an acceptable range of
@@ -58,4 +58,4 @@ If we assume a virality score of `95` for a squeak to be considered "viral",
 this chart visually confirms that roughly 5% of squeaks that were generated
 achieved that score in the distribution within the first few blocks.
 
-![baseline virality of sample squeaks](./virality/figures/generated_data.png "Virality from generated squeaks")
+![virality of generated squeaks](./virality/figures/generated_data.png "Virality of generated squeaks")

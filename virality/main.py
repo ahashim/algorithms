@@ -1,10 +1,10 @@
 from math import log as ln, sqrt
 import matplotlib.pyplot as plt
 import numpy as np
-from sample_data import squeaks
+from mock_data import squeaks
 
 
-def score(x, squeak):
+def score(squeak, x):
     if squeak["likes"] > 0 and squeak["resqueaks"] > 0:
         return 1000 / (x + virality(squeak) + 10)
     return 0 / x
