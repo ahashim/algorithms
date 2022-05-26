@@ -11,11 +11,11 @@ calculate the order of virality $\large \vartheta$ with the formula
 $$
     \large
     \begin{array}{c}
-      \vartheta \ = \ \sqrt{\frac{L}{D}} \
+      \vartheta \ = \ \sqrt{\frac{L}{D \ + \ 1}} \
       \times \
       \log{(L \ + \ D)} \
       \times \
-      \log{R}
+      \frac{log{R}}{R}
     \end{array}
 $$
 
@@ -27,26 +27,26 @@ $$
     \begin{array}{c}
       k \ = \ \begin{cases}
         0 &\text{if } \vartheta \ = \ 0 \\
-        \frac{1}{\vartheta} &\text{if } \vartheta \ > \ 0
+        \frac{1}{\vartheta} &\text{otherwise}
       \end{cases}
     \end{array}
 $$
 
 and the number of blocks elapsed since publishing the squeak $\large x$, gives
-us the full virality formula $V$ which only applies to squeaks with at least two
-likes $\large L$ and and two resqueaks $\large R$:
+us the full virality formula $V$ which only applies to squeaks with at least one
+like $\large L$ and and one resqueaks $\large R$:
 
 $$
     \large
     \begin{array}{c}
       V \ = \ \begin{cases}
-        \frac{1}{x \ + \ k} &\text{if } L \ > \ 2 \ \And R \ > \ 2 \\
+        \frac{1000}{x \ + \ k \ + \ 10} &\text{if } L \ > \ 0 \ \And R \ > \ 0 \\
         \frac{0}{x} &\text{otherwise}
       \end{cases}
     \end{array}
 $$
 
-Plotting the formula with some sample data as input yields the following curve
+Plotting the formula with some mock data as input yields the following curve
 
 ![baseline virality of sample squeaks](./virality/figures/sample_data.png "Virality from sample squeaks")
 
@@ -54,8 +54,8 @@ Using a Pareto distribution of weighted random values for 10000 squeaks, we can
 use the formula to verify that all squeaks fall within an acceptable range of
 virality as blocks elapse.
 
-If we assume a virality coefficient of `0.85` for a
-squeak to be considered "viral", this chart visually confirms that roughly 15%
-of squeaks that were generated achieved that coefficient in the distribution.
+If we assume a virality score of `95` for a squeak to be considered "viral",
+this chart visually confirms that roughly 5% of squeaks that were generated
+achieved that score in the distribution within the first few blocks.
 
 ![baseline virality of sample squeaks](./virality/figures/generated_data.png "Virality from generated squeaks")
